@@ -2,8 +2,12 @@
 
 5h13' 25/3
 I'm seeing this message in GCP group:
-![image](https://github.com/anhwrkspx/gcpftracker/assets/31979473/371f5e2b-2351-4ffa-bdf6-06eca5f3cafa)
 
+
+
+
+
+![image](https://github.com/anhwrkspx/gcpftracker/assets/31979473/371f5e2b-2351-4ffa-bdf6-06eca5f3cafa)
 
 5h20' 25/3
 Using Gemini to decide tech stack : Python, Requests + BeautifulSoup,  

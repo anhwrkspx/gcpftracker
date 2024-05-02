@@ -100,9 +100,9 @@ def categorize_tier(badge_data):
     base= badge_data[2]
     print(badge_data)
     tier = "0"
-    if(total>=14 and skills>=6 and base>=8):
+    if(total>=14 and skills>=6):
         tier="2"
-    elif(total>=7 and skills>=3 and base>=4):
+    elif(total>=7 and skills>=3):
       tier="1"
       
     return tier

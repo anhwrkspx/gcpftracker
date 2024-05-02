@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QuanQuanGCP Season 6</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ui/style.css') }}" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>QuanQuanGCP Season 6</h1>
+    </div>
+
+    <form action="/">
+        <label for="user_link">Cloud Skills Boost Profile URL</label>
+        <input type="text" id="user_link" name="user_link" required>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    {% if user_link %}
+    {% if num_badges %}
+    <p> You have {{ skill_badges }} skill badges, {{ base_badges }} base badges</p>
+    <p>Total {{ num_badges }} badges earned</p>
+    <p>Current Tier : {{ tier }}</p>
+    <p> Your tier gift:</p>
+    <p><img src="/static/img/tier{{ tier }}.png" /></p>
+    {% else %}
+    <p>{{ error_message }}</p>
+    {% endif %}
+    {% endif %}
+
+    
+    
+      <!-- <script>
+        // Replace these values with your actual badge counts
+        const skillBadges = 10;
+        const baseBadges = 5;
+    
+        const totalBadges = skillBadges + baseBadges;
+        const requiredBadges = 10; // Minimum badges for 100% completion
+    
+        let completionPercentage = Math.min(100, Math.floor(totalBadges / requiredBadges * 100));
+        const progressBar = document.querySelector('.progress');
+        const completionText = document.querySelector('.completion-text');
+    
+        progressBar.style.width = `${completionPercentage}%`;
+        completionText.textContent = `${completionPercentage}%`;
+    
+        // Update color based on percentage (optional)
+        if (completionPercentage >= 100) {
+          progressBar.classList.add('green');
+        } else if (completionPercentage >= 50) {
+          progressBar.classList.add('yellow');
+        } else {
+          progressBar.classList.add('red');
+        }
+      </script> -->
+</body>
+
+</html>

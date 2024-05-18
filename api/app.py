@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from bs4 import BeautifulSoup
-import utils as utils
+import api.utils as utils
 
 
 app = Flask(__name__)
